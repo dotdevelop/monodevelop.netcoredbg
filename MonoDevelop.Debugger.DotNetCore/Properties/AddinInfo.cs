@@ -38,3 +38,8 @@ using Mono.Addins.Description;
 [assembly: AddinCategory("Debugging")]
 [assembly: AddinDescription("Managed Debugging Engine support for .NET Core.")]
 [assembly: AddinAuthor("Lex Li")]
+
+[assembly:AddinDependency ("Core", MonoDevelop.BuildInfo.Version)]
+[assembly:AddinDependency ("Debugger", MonoDevelop.BuildInfo.Version)]
+[assembly:AddinDependency ("Ide", MonoDevelop.BuildInfo.Version)]
+[assembly:AddinDependency ("DotNetCore", MonoDevelop.BuildInfo.Version)]

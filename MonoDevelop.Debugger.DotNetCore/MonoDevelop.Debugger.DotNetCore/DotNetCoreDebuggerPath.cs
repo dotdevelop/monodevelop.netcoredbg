@@ -32,7 +32,7 @@ using MonoDevelop.Core;
 
 namespace MonoDevelop.Debugger.DotNetCore
 {
-    class DotNetCoreDebuggerPath
+    public class DotNetCoreDebuggerPath
     {
         public DotNetCoreDebuggerPath()
         {

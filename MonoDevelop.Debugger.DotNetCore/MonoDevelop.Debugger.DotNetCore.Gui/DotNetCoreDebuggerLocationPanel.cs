@@ -38,7 +38,7 @@ using MonoDevelop.Projects;
 
 namespace MonoDevelop.Debugger.DotNetCore.Gui
 {
-    class DotNetCoreDebuggerLocationPanel : OptionsPanel
+    public class DotNetCoreDebuggerLocationPanel : OptionsPanel
     {
         DotNetCoreDebuggerLocationWidget widget;
 

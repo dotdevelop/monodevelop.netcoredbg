@@ -8,7 +8,7 @@
             features="Tracepoints, Catchpoints, DebugFile, Stepping, Pause, Breakpoints, ConditionalBreakpoints, Attaching"
             type="MonoDevelop.Debugger.DotNetCore.DotNetCoreDebuggerEngine" />
     </Extension>
-    
+
     <Extension path="/MonoDevelop/Ide/GlobalOptionsDialog/Projects">
         <Section id="DotNetCoreDebugger" _label=".NET Core Debuggers" icon="md-platform-netcore">
             <Panel

@@ -32,7 +32,7 @@ using MonoDevelop.DotNetCore;
 
 namespace MonoDevelop.Debugger.DotNetCore
 {
-    class DotNetCoreDebuggerEngine : DebuggerEngineBackend
+    public class DotNetCoreDebuggerEngine : DebuggerEngineBackend
     {
         #region IDebuggerEngine Members
 

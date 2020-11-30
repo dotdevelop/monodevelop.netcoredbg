@@ -1,17 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(RootDirectory)\MonoDevelop.props" />
+  <Import Project="$(ReferencesGtk)" />
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <OutputPath>..\..\..\build\AddIns\MonoDevelop.Debugger.DotNetCore</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MonoDevelop.Addins" Version="0.4.6" />
-    <PackageReference Include="Xwt" Version="0.1.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <AddinReference Include="MonoDevelop.AspNetCore" />
-    <AddinReference Include="MonoDevelop.Debugger.VsCodeDebugProtocol" />
-    <AddinReference Include="MonoDevelop.DotNetCore" />
-    <AddinReference Include="MonoDevelop.Debugger" />
-    <AddinReference Include="MonoDevelop.Ide" />
+    <ProjectReference Include="$(RootDirectory)\src\addins\MonoDevelop.Debugger\MonoDevelop.Debugger.csproj" />
+    <ProjectReference Include="$(RootDirectory)\src\addins\MonoDevelop.DotNetCore\MonoDevelop.DotNetCore.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MonoDevelop.Debugger.DotNetCore.Gui\" />
