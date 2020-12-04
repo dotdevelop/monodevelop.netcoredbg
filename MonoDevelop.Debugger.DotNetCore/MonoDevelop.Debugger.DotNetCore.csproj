@@ -2,7 +2,7 @@
   <Import Project="$(RootDirectory)\MonoDevelop.props" />
   <Import Project="$(ReferencesGtk)" />
   <PropertyGroup>
-    <OutputPath>..\..\..\build\AddIns\MonoDevelop.Debugger.DotNetCore</OutputPath>
+    <OutputPath>$(RootDirectory)\build\AddIns\MonoDevelop.Debugger.DotNetCore</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="$(RootDirectory)\src\addins\MonoDevelop.Debugger\MonoDevelop.Debugger.csproj" />
