@@ -28,6 +28,8 @@
 
 using System;
 using System.IO;
+using System.Reflection;
+using Mono.Unix.Native;
 using MonoDevelop.Core;
 
 namespace MonoDevelop.Debugger.DotNetCore
@@ -70,12 +72,21 @@ namespace MonoDevelop.Debugger.DotNetCore
             return currentPath == defaultPath;
         }
 
+        static string GetAddInsPath ()
+        {
+	        var path = Directory.GetParent (Assembly.GetExecutingAssembly ().Location);
+	        while (path.Name!="AddIns" && path != default) {
+		        path = path.Parent;
+	        }
+
+	        return path.FullName;
+        }
+
         static string GetDefaultPath()
         {
             return Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.Personal),
-                "netcoredbg",
-                "bin",
+	            GetAddInsPath (),
+                "Samsung.Netcoredbg",
                 Platform.IsWindows ? "netcoredbg.exe" : "netcoredbg");
         }
     }
