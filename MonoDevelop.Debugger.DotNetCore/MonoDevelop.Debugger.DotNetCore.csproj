@@ -3,6 +3,8 @@
   <Import Project="$(ReferencesGtk)" />
   <PropertyGroup>
     <OutputPath>$(RootDirectory)\build\AddIns\MonoDevelop.Debugger.DotNetCore</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="$(RootDirectory)\src\addins\MonoDevelop.Debugger\MonoDevelop.Debugger.csproj" />
